@@ -1,0 +1,25 @@
+{
+  "name": "terminal-nav-page",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "init:config": "cp public/config.template.json public/config.json",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^5.4.11",
+    "vitest": "^4.1.1"
+  },
+  "engines": {
+    "node": ">=22.22.0"
+  }
+}

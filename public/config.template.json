@@ -1,0 +1,66 @@
+{
+  "ui": {
+    "shellTitle": "[nav@terminal ~]$",
+    "appTitle": "TERMINAL NAV",
+    "subtitle": "基于配置驱动的命令行风格导航页，支持分类浏览、实时过滤与快速跳转。",
+    "eyebrowSuffix": "./launch --config",
+    "stats": {
+      "categoriesLabel": "categories",
+      "linksLabel": "links",
+      "statusLabel": "status",
+      "statusLoading": "loading",
+      "statusError": "error",
+      "statusReady": "ready"
+    },
+    "search": {
+      "prompt": "$ find",
+      "placeholder": "输入分类或链接名称…"
+    },
+    "loading": {
+      "primary": "$ booting interface...",
+      "secondary": "正在读取"
+    },
+    "error": {
+      "primary": "$ error --config-load",
+      "secondary": "请检查 public/config.json 的格式是否正确，并确认开发服务器能够访问该文件。"
+    },
+    "empty": {
+      "fallbackQuery": "all",
+      "secondary": "未找到匹配项。试试分类名、链接名或修改 public/config.json。"
+    },
+    "category": {
+      "pathPrefix": "~/",
+      "suffix": "$"
+    },
+    "link": {
+      "prompt": "➜",
+      "hint": "[open]"
+    }
+  },
+  "categories": [
+    {
+      "name": "常用工具",
+      "links": [
+        { "name": "Google", "url": "https://google.com" },
+        { "name": "GitHub", "url": "https://github.com" },
+        { "name": "Stack Overflow", "url": "https://stackoverflow.com" }
+      ]
+    },
+    {
+      "name": "AI 资源",
+      "links": [
+        { "name": "ChatGPT", "url": "https://chat.openai.com" },
+        { "name": "Claude", "url": "https://claude.ai" },
+        { "name": "Midjourney", "url": "https://midjourney.com" }
+      ]
+    },
+    {
+      "name": "开发文档",
+      "links": [
+        { "name": "MDN Web Docs", "url": "https://developer.mozilla.org" },
+        { "name": "React Docs", "url": "https://react.dev" },
+        { "name": "Vite", "url": "https://vite.dev" }
+      ]
+    }
+  ]
+}
